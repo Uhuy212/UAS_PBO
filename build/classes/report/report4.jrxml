@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="26af57e5-2085-49fa-a5b4-8b5bd48b1dd7">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString language="SQL">
+		<![CDATA[select * from krs]]>
+	</queryString>
+	<field name="NIM" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="nama" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="kelas" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="n_matkul" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="id" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="semester" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="dosen" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="sks" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<staticText>
+				<reportElement x="322" y="13" width="100" height="49" uuid="686fc335-51bb-42be-8da2-bd3ae3add1d1"/>
+				<textElement>
+					<font size="36"/>
+				</textElement>
+				<text><![CDATA[report]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="51" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="100" height="20" uuid="c112bb4e-3815-4ad2-8b02-d78e52120c2d"/>
+				<text><![CDATA[NIM]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="101" y="2" width="100" height="20" uuid="1f6b3fe0-06e6-45e5-9067-2ac345faf79c"/>
+				<text><![CDATA[nama]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="201" y="2" width="100" height="20" uuid="615195b4-8a1e-4e70-bc50-73e136e7b1ad"/>
+				<text><![CDATA[kelas]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="301" y="2" width="100" height="20" uuid="be6d3ba7-1e13-4339-a5e0-4f5509e0a66f"/>
+				<text><![CDATA[n_matkul]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="401" y="2" width="100" height="20" uuid="85db256e-be5c-47c8-bd11-96ee819e7ae2"/>
+				<text><![CDATA[id]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="501" y="2" width="100" height="20" uuid="0029c647-f1b4-47a0-b38c-4c3b908ba47d"/>
+				<text><![CDATA[semester]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="601" y="2" width="100" height="20" uuid="1ac5349d-e41a-44ce-ac29-e293af5dc95a"/>
+				<text><![CDATA[dosen]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="702" y="2" width="100" height="20" uuid="3a72c519-9562-4679-ab37-75c65df996e3"/>
+				<text><![CDATA[sks]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="45" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="10" width="100" height="20" uuid="23010b04-ce26-4893-9b55-f2c3afdeb4dd"/>
+				<textFieldExpression><![CDATA[$F{NIM}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="101" y="10" width="100" height="20" uuid="dd79686e-5e6d-457c-b94f-2370396e928d"/>
+				<textFieldExpression><![CDATA[$F{nama}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="201" y="10" width="100" height="20" uuid="0efc33b6-d735-4d00-9e26-f4902f444a80"/>
+				<textFieldExpression><![CDATA[$F{kelas}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="301" y="10" width="100" height="20" uuid="a4271dbb-53d9-4100-80a5-fd3b4193150b"/>
+				<textFieldExpression><![CDATA[$F{n_matkul}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="381" y="10" width="100" height="20" uuid="4d1e0217-ddab-4081-a15f-9cfce2757665"/>
+				<textFieldExpression><![CDATA[$F{id}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="491" y="10" width="100" height="20" uuid="53bded91-bc09-4ac0-adc0-1496b86f13f4"/>
+				<textFieldExpression><![CDATA[$F{semester}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="591" y="10" width="100" height="20" uuid="f8231f9f-7eb5-47f8-9753-a60419c3c9ec"/>
+				<textFieldExpression><![CDATA[$F{dosen}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="691" y="10" width="100" height="20" uuid="2c658254-c01b-4e16-b430-e0b4b639167d"/>
+				<textFieldExpression><![CDATA[$F{sks}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
